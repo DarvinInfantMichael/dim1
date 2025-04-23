@@ -1,0 +1,644 @@
+Ex:1
+
+npm install -g create-expo-app
+npm install -g expo-cli
+npm install react-dom@18.3.1
+npm install react-native-web@~0.19.13
+npx create-expo-app BMICalculatorApp --template blank
+npm start
+
+App.js
+
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+
+const App = () => {
+    const [age, setAge] = useState('');
+    const [height, setHeight] = useState('');
+    const [weight, setWeight] = useState('');
+    const [gender, setGender] = useState('');
+    const [bmiResult, setBmiResult] = useState(null);
+
+    const validateForm = () => {
+        if (!age || !height || !weight || !gender) {
+            alert('All fields are required!');
+        } else {
+            countBmi();
+        }
+    };
+
+    const countBmi = () => {
+        const bmi = (parseFloat(weight) / ((parseFloat(height) / 100) ** 2)).toFixed(2);
+        let result = '';
+
+        if (bmi < 18.5) {
+            result = 'Underweight';
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            result = 'Healthy';
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            result = 'Overweight';
+        } else if (bmi >= 30) {
+            result = 'Obese';
+        }
+
+        setBmiResult({ bmi, result });
+        setAge('');
+        setHeight('');
+        setWeight('');
+        setGender('');
+    };
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.header}>BMI Calculator</Text>
+            <View style={styles.form}>
+                <TextInput style={styles.textInput} placeholder="Enter your age" onChangeText={setAge} value={age} keyboardType="numeric" />
+                <TextInput style={styles.textInput} placeholder="Enter your height (cm)" onChangeText={setHeight} value={height} keyboardType="numeric" />
+                <TextInput style={styles.textInput} placeholder="Enter your weight (kg)" onChangeText={setWeight} value={weight} keyboardType="numeric" />
+                <View style={styles.genderRow}>
+                    <TouchableOpacity style={[styles.genderButton, gender === 'male' && styles.selectedGender]} onPress={() => setGender('male')}>
+                        <Text style={styles.genderText}>Male</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={[styles.genderButton, gender === 'female' && styles.selectedGender]} onPress={() => setGender('female')}>
+                        <Text style={styles.genderText}>Female</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.submitButton} onPress={validateForm}>
+                    <Text style={styles.submitButtonText}>Calculate BMI</Text>
+                </TouchableOpacity>
+                {bmiResult && (
+                    <View style={styles.resultContainer}>
+                        <Text style={styles.resultLabel}>BMI:</Text>
+                        <Text style={styles.resultText}>{bmiResult.bmi}</Text>
+                        <Text style={styles.resultLabel}>Result:</Text>
+                        <Text style={styles.resultText}>{bmiResult.result}</Text>
+                    </View>
+                )}
+            </View>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#eef2f3',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    header: {
+        fontSize: 28,
+        fontWeight: 'bold',
+        color: '#289
+
+
+
+Ex:2
+
+npm install -g create-expo-app
+npm install -g expo-cli
+npm install react-dom@18.3.1
+npm install react-native-web@~0.19.13
+npx create-expo-app MetricSystem --template blank
+cd MetricSystem
+
+App.js
+
+import React, { useState } from 'react';
+import { StyleSheet, View, Text, TextInput, Picker } from 'react-native';
+
+const App = () => {
+  const [inputValue, setInputValue] = useState('');
+  const [inputUnit, setInputUnit] = useState('miles');
+
+  const getOutputUnit = () => {
+    switch (inputUnit) {
+      case 'miles':
+        return 'km';
+      case 'pounds':
+        return 'kg';
+      case 'gallons':
+        return 'liters';
+      case 'fahrenheit':
+        return 'celsius';
+      default:
+        return '';
+    }
+  };
+
+  const getOutputUnitLabel = () => {
+    const outputUnit = getOutputUnit();
+    switch (outputUnit) {
+      case 'km':
+        return 'Kilometers';
+      case 'kg':
+        return 'Kilograms';
+      case 'liters':
+        return 'Liters';
+      case 'celsius':
+        return 'Celsius';
+      default:
+        return '';
+    }
+  };
+
+  const convertToMetric = () => {
+    switch (inputUnit) {
+      case 'miles':
+        return parseFloat(inputValue) * 1.60934;
+      case 'pounds':
+        return parseFloat(inputValue) * 0.453592;
+      case 'gallons':
+        return parseFloat(inputValue) * 3.78541;
+      case 'fahrenheit':
+        return ((parseFloat(inputValue) - 32) * 5) / 9;
+      default:
+        return 0;
+    }
+  };
+
+  const convertedValue = convertToMetric();
+  const outputUnit = getOutputUnit();
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.heading}>Unit Converter</Text>
+      <View style={styles.inputContainer}>
+        <TextInput
+          style={styles.input}
+          value={inputValue}
+          onChangeText={setInputValue}
+          keyboardType="numeric"
+          placeholder="Enter value"
+        />
+        <Picker
+          style={styles.picker}
+          selectedValue={inputUnit}
+          onValueChange={setInputUnit}
+        >
+          <Picker.Item label="Miles" value="miles" />
+          <Picker.Item label="Pounds" value="pounds" />
+          <Picker.Item label="Gallons" value="gallons" />
+          <Picker.Item label="Fahrenheit" value="fahrenheit" />
+        </Picker>
+      </View>
+      <Text style={styles.resultLabel}>Converted Value:</Text>
+      <Text style={styles.result}>
+        {isNaN(convertedValue) ? '0' : convertedValue.toFixed(2)} {getOutputUnitLabel()}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  heading: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  input: {
+    flex: 1,
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginRight: 10,
+    paddingHorizontal: 10,
+  },
+  picker: {
+    height: 40,
+    width:
+
+
+
+Ex:4
+
+App.js
+
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
+
+const App = () => {
+  const [task, setTask] = useState('');
+  const [tasks, setTasks] = useState([]);
+
+  const addTask = () => {
+    if (task.trim() === '') {
+      alert('Please enter a task');
+      return;
+    }
+    const newTask = { id: Date.now().toString(), task, completed: false };
+    setTasks([...tasks, newTask]);
+    setTask('');
+  };
+
+  const toggleTaskCompletion = (taskId) => {
+    const updatedTasks = tasks.map((t) =>
+      t.id === taskId ? { ...t, completed: !t.completed } : t
+    );
+    setTasks(updatedTasks);
+  };
+
+  const deleteTask = (taskId) => {
+    const updatedTasks = tasks.filter((t) => t.id !== taskId);
+    setTasks(updatedTasks);
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.header}>To-Do List</Text>
+     
+      <TextInput
+        style={styles.textInput}
+        placeholder="Enter task"
+        value={task}
+        onChangeText={setTask}
+      />
+     
+      <TouchableOpacity style={styles.addButton} onPress={addTask}>
+        <Text style={styles.addButtonText}>Add Task</Text>
+      </TouchableOpacity>
+
+      <View style={styles.taskContainer}>
+        <FlatList
+          data={tasks}
+          renderItem={({ item }) => (
+            <View style={styles.taskRow}>
+              <TouchableOpacity
+                style={[styles.task, item.completed && styles.completedTask]}
+                onPress={() => toggleTaskCompletion(item.id)}
+              >
+                <Text style={[styles.taskText, styles.leftAlignedText]}>{item.task}</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.deleteButton}
+                onPress={() => deleteTask(item.id)}
+              >
+                <Text style={styles.deleteButtonText}>Delete</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+          keyExtractor={(item) => item.id}
+        />
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f5f5f5',
+    alignItems: 'center',
+    paddingTop: 50,
+  },
+  header: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 20,
+  },
+  textInput: {
+    width: '80%',
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingLeft: 10,
+    fontSize: 16,
+    marginBottom: 20,
+  },
+  addButton: {
+    backgroundColor: '#289df6',
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    marginBottom: 20,
+  },
+  addButtonText: {
+    fontSize: 18,
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+  taskContainer: {
+    flex: 1,
+    width: '80%',
+  },
+  taskRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 15,
+    paddingVertical
+
+
+
+
+
+
+Ex:2
+
+app.js
+
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, Text, View, TextInput, Button, FlatList, Picker } from 'react-native';
+
+const ExpenseItem = ({ expense }) => (
+  <View style={styles.transactionContainer}>
+    <Text style={styles.transactionDate}>{expense.date}</Text>
+    <Text style={styles.transactionAmount}>${expense.amount.toFixed(2)}</Text>
+    <Text style={styles.transactionCategory}>{expense.category || 'Uncategorized'}</Text>
+  </View>
+);
+
+const App = () => {
+  const [transactions, setTransactions] = useState([]);
+  const [amount, setAmount] = useState('');
+  const [category, setCategory] = useState('');
+  const [weeklyIncome, setWeeklyIncome] = useState(0);
+  const [showIncomeForm, setShowIncomeForm] = useState(true);
+
+  useEffect(() => {
+    const totalExpenses = transactions.reduce((total, transaction) => total + (transaction.type === 'expense' ? transaction.amount : 0), 0);
+    setWeeklyIncome(weeklyIncome - totalExpenses);
+  }, [transactions]);
+
+  const handleIncomeSubmit = () => {
+    setWeeklyIncome(parseFloat(amount));
+    setAmount('');
+    setShowIncomeForm(false);
+  };
+
+  const handleTransactionSubmit = () => {
+    const newTransaction = {
+      id: Date.now().toString(),
+      amount: parseFloat(amount),
+      category,
+      date: new Date().toLocaleDateString(),
+    };
+    setTransactions([...transactions, newTransaction]);
+    setAmount('');
+    setCategory('');
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.remainingBalance}>Remaining Balance: ${weeklyIncome.toFixed(2)}</Text>
+      {showIncomeForm ? (
+        <View style={styles.formContainer}>
+          <TextInput
+            style={styles.input}
+            placeholder="Weekly Income"
+            value={amount}
+            onChangeText={setAmount}
+            keyboardType="numeric"
+          />
+          <Button title="Submit Income" onPress={handleIncomeSubmit} />
+        </View>
+      ) : (
+        <View style={styles.formContainer}>
+          <TextInput
+            style={styles.input}
+            placeholder="Expense Amount"
+            value={amount}
+            onChangeText={setAmount}
+            keyboardType="numeric"
+          />
+          <Picker selectedValue={category} onValueChange={setCategory} style={styles.picker}>
+            <Picker.Item label="Select Category" value="" />
+            <Picker.Item label="Food" value="Food" />
+            <Picker.Item label="Travel" value="Travel" />
+            <Picker.Item label="Work" value="Work" />
+            <Picker.Item label="Personal" value="Personal" />
+          </Picker>
+          <Button title="Add Expense" onPress={handleTransactionSubmit} />
+        </View>
+      )}
+      <FlatList
+        data={transactions}
+        renderItem={({ item }) => <ExpenseItem expense={item} />}
+        keyExtractor={(item) => item.id}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#fff',
+  },
+  remainingBalance: {
+    fontWeight: 'bold',
+    fontSize: 16,
+    marginBottom: 10,
+  },
+  formContainer: {
+    marginBottom: 20,
+  },
+  input: {
+    height: 40,
+    borderColor: 'gray',
+    border
+
+
+
+
+Ex;6
+
+CODE:
+
+//index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location App</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Location App</h2>
+        <button class="button" onclick="getLocation()">Get Location</button>
+        <div id="location" class="location-info"></div>
+    </div>
+</body>
+</html>
+
+//index.css
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;}
+.heading {
+    font-size: 24px;
+    color: #333;}
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;}
+.button:hover {
+    background-color: #0056b3;}
+.location-info {
+    margin-top: 20px;
+    font-size: 18px;}
+
+//index.js
+function getLocation() {
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);}
+
+function onSuccess(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    document.getElementById('location').innerHTML = 'Latitude: ' + latitude + '<br>Longitude: ' + longitude;}
+
+function onError(error) {
+    alert('Error occurred. Code: ' + error.code + '\nMessage: ' + error.message);}
+
+
+
+
+
+Ex:5
+
+
+PROGRAM:
+
+//index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="header">
+      <img src="img/img.jpg" alt="Header Image" class="header-img">
+    </div>
+    <div class="login-form">
+      <label for="username" class="label">Username:</label>
+      <input type="text" id="username" class="input" placeholder="Enter Username">     
+      <label for="password" class="label">Password:</label>
+      <input type="password" id="password" class="input" placeholder="Enter Password">     
+      <div class="buttons">
+        <button id="reset" class="reset-button">Reset</button>
+        <button id="submit" class="submit-button">Submit</button>
+      </div>         </div>  </div>
+  <script src="cordova.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+//app.js
+
+document.addEventListener('deviceready', function() {
+    const usernameField = document.getElementById('username');
+    const passwordField = document.getElementById('password');
+    const resetButton = document.getElementById('reset');
+    const submitButton = document.getElementById('submit');
+
+    resetButton.addEventListener('click', function() {
+      usernameField.value = '';
+      passwordField.value = '';
+    });
+ 
+    submitButton.addEventListener('click', function() {
+      const username = usernameField.value;
+      const password = passwordField.value;
+     
+      if (username && password) {
+        alert('Login successful!');
+      } else {
+        alert('Please enter both username and password.');
+      }
+    });
+  });
+ 
+//styles.css
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;  }
+  
+  .header-img {
+    max-width: 200px;
+    height: 150px;  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;  }
+  
+  .label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  }
+  
+  .reset-button, .submit-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;  }
+  
+  .reset-button {
+    background-color: #f44336;  }
+  
+  .reset-button:hover, .submit-button:hover {
+    opacity: 0.8;  }
+
+
+
+
+
+
