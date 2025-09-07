@@ -1,4 +1,4 @@
-# <div align="center">🌟 Hello developers, I'm Sherwin Rodriguez! 🌟</div>
+# <div align="center">🌟 Hello developers, I'm Darvin Infant Michael! 🌟</div>
 
 <div align="center">
 
@@ -14,9 +14,9 @@
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=SherwinRodriguez&style=for-the-badge&color=blueviolet&abbreviated=true)
-[![LinkedIn](https://img.shields.io/badge/-Let's_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sherwin-emmanuel-rodriguez-67445b290/)
-[![Email](https://img.shields.io/badge/-Drop_a_Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sherwin7rodriguez10@gmail.com)
+![Profile Views](https://komarev.com/ghpvc/?username=DarvinInfantMichael&style=for-the-badge&color=blueviolet&abbreviated=true)
+[![LinkedIn](https://img.shields.io/badge/-Let's_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/darvin-infant-michael/)
+[![Email](https://img.shields.io/badge/-Drop_a_Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:darvininfantmichael@gmail.com)
 
 </div>
 
@@ -25,23 +25,23 @@
 <img align="right" alt="Coding GIF" width="400" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif"/>
 
 ```javascript
-const sherwin = {
-    name: "Sherwin Emmanuel Rodriguez",
-    location: "Chennai, India 🇮🇳",
+const darvin = {
+    name: "Darvin Infant Michael",
+    location: "India 🇮🇳",
     education: "Computer Science Student",
     role: "Full Stack Developer",
     
     passions: [
         "Web Development",
         "Problem Solving", 
-        "Blockchain Technology",
-        "Cloud Computing"
+        "Software Engineering",
+        "Open Source"
     ],
     
     currentlyLearning: [
         "Advanced React Patterns",
         "System Design", 
-        "Blockchain Development",
+        "DevOps & CI/CD",
         "Data Structures & Algorithms"
     ],
     
@@ -61,7 +61,7 @@ const sherwin = {
 
 ### 🔭 Current Focus
 - 🚀 Building scalable web applications
-- 🌐 Exploring Web3 & blockchain technology  
+- 🌐 Exploring modern web technologies  
 - 📚 Mastering data structures & algorithms
 - 🤝 Contributing to open-source projects
 
@@ -71,7 +71,7 @@ const sherwin = {
 ### 🌱 Learning Journey  
 - 📊 Advanced system design patterns
 - ⚡ Performance optimization techniques
-- 🔒 Cybersecurity fundamentals
+- 🔒 Software architecture principles
 - 🎨 UI/UX design principles
 
 </td>
@@ -100,16 +100,16 @@ const sherwin = {
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ### Backend & Database
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ### Cloud & Tools
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![IntelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
@@ -119,15 +119,15 @@ const sherwin = {
 
 <div align="center">
 
-<img height="200em" src="https://github-readme-stats.vercel.app/api?username=SherwinRodriguez&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=FFFFFF&include_all_commits=true&count_private=true"/>
+<img height="200em" src="https://github-readme-stats.vercel.app/api?username=DarvinInfantMichael&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=FFFFFF&include_all_commits=true&count_private=true"/>
 
-<img height="200em" src="https://github-readme-streak-stats.herokuapp.com?user=SherwinRodriguez&theme=radical&hide_border=true&background=0D1117&stroke=F85D7F&ring=F8D866&fire=F85D7F&currStreakLabel=F8D866"/>
+<img height="200em" src="https://github-readme-streak-stats.herokuapp.com?user=DarvinInfantMichael&theme=radical&hide_border=true&background=0D1117&stroke=F85D7F&ring=F8D866&fire=F85D7F&currStreakLabel=F8D866"/>
 
 </div>
 
 <div align="center">
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SherwinRodriguez&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=FFFFFF)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DarvinInfantMichael&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=FFFFFF)
 
 </div>
 
@@ -135,7 +135,7 @@ const sherwin = {
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=SherwinRodriguez&theme=discord&no-frame=true&no-bg=true&row=1&column=7)](https://github.com/SherwinRodriguez)
+[![trophy](https://github-profile-trophy.vercel.app/?username=DarvinInfantMichael&theme=discord&no-frame=true&no-bg=true&row=1&column=7)](https://github.com/DarvinInfantMichael)
 
 </div>
 
@@ -148,7 +148,7 @@ const sherwin = {
 <td align="center" width="33%">
 
 ### 🟡 LeetCode
-[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/sherwin-rodriguez/)
+[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/darvininfantmichael/)
 
 **Focus Areas:**
 - 🔍 Algorithms & Data Structures
@@ -159,7 +159,7 @@ const sherwin = {
 <td align="center" width="33%">
 
 ### 🟢 GeeksforGeeks
-[![GeeksforGeeks](https://img.shields.io/badge/-GeeksforGeeks-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/sherwin-rodriguez/)
+[![GeeksforGeeks](https://img.shields.io/badge/-GeeksforGeeks-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/darvininfantmichael/)
 
 **Activities:**
 - 📚 Article Reading & Practice
@@ -187,7 +187,9 @@ const sherwin = {
 
 <div align="center">
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=SherwinRodriguez&custom_title=Sherwin's%20GitHub%20Activity&bg_color=0D1117&color=F85D7F&line=F8D866&point=FFFFFF&area_color=F85D7F&title_color=FFFFFF&area=true)
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=DarvinInfantMichael&custom_title=Darvin's%20GitHub%20Activity&bg_color=0D1117&color=F85D7F&line=F8D866&point=FFFFFF&area_color=F85D7F&title_color=FFFFFF&area=true)
+
+</div>
 
 ## 💭 Daily Motivation
 
@@ -210,10 +212,10 @@ I'm always excited to connect with fellow developers, discuss new ideas, and col
 
 **Don't hesitate to reach out!**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sherwin-emmanuel-rodriguez-67445b290/)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sherwin7rodriguez10@gmail.com)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/sherwin-rodriguez/)
-[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/sherwin-rodriguez/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/darvin-infant-michael/)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:darvininfantmichael@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/darvininfantmichael/)
+[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/darvininfantmichael/)
 
 </div>
 
@@ -230,4 +232,5 @@ I'm always excited to connect with fellow developers, discuss new ideas, and col
 <div align="center">
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer)
+
 </div>
