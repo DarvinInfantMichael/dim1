@@ -1,8 +1,6 @@
 <div align="center">
 
-# 👋 Hi, I'm Darvin Infant Michael
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=2E9EFF&center=true&vCenter=true&width=600&lines=Full+Stack+Developer+%F0%9F%9A%80;AI+%26+ML+Enthusiast+%F0%9F%A4%96;Open+Source+Contributor+%F0%9F%8C%9F;Always+Learning%2C+Always+Building!)](https://git.io/typing-svg)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E9EFF,100:667EEA&height=200&section=header&text=Darvin%20Infant%20Michael&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Developer%20|%20AI%20Enthusiast%20|%20Open%20Source%20Contributor&descAlignY=55&descSize=18"/>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DarvinInfantMichael&style=flat-square&color=2e9eff)
 [![GitHub Followers](https://img.shields.io/github/followers/DarvinInfantMichael?style=flat-square&color=2e9eff&labelColor=1a1a1a)](https://github.com/DarvinInfantMichael)
@@ -14,18 +12,97 @@
 
 ## 🚀 About Me
 
-```javascript
-const darvin = {
-    location: "🌍 Earth, Milky Way",
-    role: "Full Stack Developer",
-    passions: ["AI/ML", "Web3", "Cloud Architecture", "Open Source"],
-    currentlyLearning: ["System Design", "Kubernetes", "Machine Learning"],
-    funFact: "I debug with console.log and I'm proud of it! 🐛",
-    lifeGoal: "Make technology more human-friendly 💫"
-};
+<div align="center">
 
-console.log("Let's build something amazing together! 🚀");
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 👨‍💻 Quick Facts
+
+```yaml
+name: Darvin Infant Michael
+located_in: Chennai, India
+current_role: Full Stack Developer
+education: Computer Science
+company: Building Amazing Things
+
+fields_of_interests:
+  - AI & Machine Learning
+  - Web Development
+  - Cloud Architecture
+  - Open Source
+  - DevOps
 ```
+
+</td>
+<td width="50%" valign="top">
+
+### 💼 What I Do
+
+```typescript
+class Developer {
+  constructor() {
+    this.name = "Darvin";
+    this.dayStartsWith = "☕ Coffee";
+    this.nightEndsWith = "💻 Code";
+  }
+
+  worksWith() {
+    return [
+      "React & Next.js",
+      "Node.js & Python", 
+      "AWS & Docker",
+      "MongoDB & PostgreSQL"
+    ];
+  }
+
+  currentlyLearning() {
+    return [
+      "System Design 🏗️",
+      "Kubernetes ☸️",
+      "AI/ML 🤖"
+    ];
+  }
+}
+```
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<div align="center">
+
+### 🎯 My Coding Journey
+
+[![roadmap.sh](https://api.roadmap.sh/v1-badge/wide/64f9f5e3e5d6c5f5e5d6c5f5?variant=dark)](https://roadmap.sh)
+
+</div>
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[💡 Idea] --> B[🎨 Design]
+    B --> C[💻 Code]
+    C --> D[🧪 Test]
+    D --> E[🚀 Deploy]
+    E --> F[📊 Monitor]
+    F --> A
+    
+    style A fill:#2E9EFF
+    style B fill:#667EEA
+    style C fill:#2E9EFF
+    style D fill:#667EEA
+    style E fill:#2E9EFF
+    style F fill:#667EEA
+```
+
+**My Development Workflow** ⚡
+
+</div>
 
 ---
 
