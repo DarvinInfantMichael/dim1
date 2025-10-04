@@ -1,10 +1,10 @@
 <div align="center">
 
-<!-- Animated Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=DARVIN%20INFANT%20MICHAEL&fontSize=45&fontColor=fff&animation=twinkling&fontAlignY=35"/>
+<!-- Minimized Animated Header -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=header&text=DARVIN%20INFANT%20MICHAEL&fontSize=35&fontColor=fff&animation=twinkling&fontAlignY=40"/>
 
-<!-- Hacker Animation -->
-<img src="https://user-images.githubusercontent.com/74038190/212748830-4c709398-a386-4761-84d7-9e10b98fbe6e.gif" width="100%"/>
+<!-- Compact Animated Divider -->
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%"/>
 
 </div>
 
