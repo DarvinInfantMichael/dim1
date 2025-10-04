@@ -1,71 +1,52 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E9EFF,100:667EEA&height=200&section=header&text=Darvin%20Infant%20Michael&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Developer%20|%20AI%20Enthusiast%20|%20Open%20Source%20Contributor&descAlignY=55&descSize=18"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:243B55,50:141E30,100:000000&height=250&section=header&text=🚀%20DARVIN%20INFANT%20MICHAEL%20🌌&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=⭐%20Exploring%20the%20Digital%20Universe%20⭐&descAlignY=58&descSize=20"/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=DarvinInfantMichael&style=flat-square&color=2e9eff)
-[![GitHub Followers](https://img.shields.io/github/followers/DarvinInfantMichael?style=flat-square&color=2e9eff&labelColor=1a1a1a)](https://github.com/DarvinInfantMichael)
-[![GitHub Stars](https://img.shields.io/github/stars/DarvinInfantMichael?style=flat-square&color=2e9eff&labelColor=1a1a1a)](https://github.com/DarvinInfantMichael)
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
+![Profile Views](https://komarev.com/ghpvc/?username=DarvinInfantMichael&style=flat-square&color=blueviolet)
+[![GitHub Followers](https://img.shields.io/github/followers/DarvinInfantMichael?style=flat-square&color=blueviolet&labelColor=000000)](https://github.com/DarvinInfantMichael)
+[![GitHub Stars](https://img.shields.io/github/stars/DarvinInfantMichael?style=flat-square&color=blueviolet&labelColor=000000)](https://github.com/DarvinInfantMichael)
 
 </div>
 
 ---
 
-## 🚀 About Me
+## 🎮 About Me - Player Stats
 
 <div align="center">
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="50%" align="center">
 
-### 👨‍💻 Quick Facts
+### 👾 CHARACTER INFO
 
-```yaml
-name: Darvin Infant Michael
-located_in: Chennai, India
-current_role: Full Stack Developer
-education: Computer Science
-company: Building Amazing Things
+<img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="300"/>
 
-fields_of_interests:
-  - AI & Machine Learning
-  - Web Development
-  - Cloud Architecture
-  - Open Source
-  - DevOps
-```
+**🎯 LEVEL:** Full Stack Developer  
+**📍 LOCATION:** Chennai, India  
+**⚡ CLASS:** Code Wizard  
+**🎪 GUILD:** Open Source Alliance  
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" align="center">
 
-### 💼 What I Do
+### ⚔️ SKILLS & ABILITIES
 
-```typescript
-class Developer {
-  constructor() {
-    this.name = "Darvin";
-    this.dayStartsWith = "☕ Coffee";
-    this.nightEndsWith = "💻 Code";
-  }
-
-  worksWith() {
-    return [
-      "React & Next.js",
-      "Node.js & Python", 
-      "AWS & Docker",
-      "MongoDB & PostgreSQL"
-    ];
-  }
-
-  currentlyLearning() {
-    return [
-      "System Design 🏗️",
-      "Kubernetes ☸️",
-      "AI/ML 🤖"
-    ];
-  }
-}
 ```
+╔══════════════════════════════════╗
+║  Frontend Development    ████████ 85%
+║  Backend Engineering     ████████ 90%
+║  Database Management     ███████░ 80%
+║  Cloud & DevOps          ██████░░ 75%
+║  AI & Machine Learning   █████░░░ 65%
+║  Problem Solving         █████████ 95%
+╚══════════════════════════════════╝
+```
+
+**🏆 ACHIEVEMENTS UNLOCKED:** 50+  
+**⭐ XP POINTS:** 10,000+
 
 </td>
 </tr>
@@ -75,32 +56,52 @@ class Developer {
 
 <div align="center">
 
-### 🎯 My Coding Journey
+### 🎯 CURRENT QUESTS
 
-[![roadmap.sh](https://api.roadmap.sh/v1-badge/wide/64f9f5e3e5d6c5f5e5d6c5f5?variant=dark)](https://roadmap.sh)
+| Quest | Status | Reward |
+|-------|--------|--------|
+| 🏗️ Master System Design | 🔄 In Progress | +500 XP |
+| ☸️ Kubernetes Mastery | 🔄 In Progress | +400 XP |
+| 🤖 AI/ML Implementation | 🔄 In Progress | +600 XP |
+| 🌟 Open Source Contributions | ✅ Active | +∞ XP |
 
 </div>
 
 <div align="center">
 
-```mermaid
-graph LR
-    A[💡 Idea] --> B[🎨 Design]
-    B --> C[💻 Code]
-    C --> D[🧪 Test]
-    D --> E[🚀 Deploy]
-    E --> F[📊 Monitor]
-    F --> A
-    
-    style A fill:#2E9EFF
-    style B fill:#667EEA
-    style C fill:#2E9EFF
-    style D fill:#667EEA
-    style E fill:#2E9EFF
-    style F fill:#667EEA
+### 🎮 INVENTORY - Tech Stack
+
+```ascii
+┌─────────────────────────────────────────────┐
+│                                             │
+│  ⚔️  WEAPONS (Languages)                    │
+│  ├─ JavaScript/TypeScript                   │
+│  ├─ Python                                  │
+│  └─ Java                                    │
+│                                             │
+│  🛡️  ARMOR (Frameworks)                     │
+│  ├─ React.js / Next.js                      │
+│  ├─ Node.js / Express                       │
+│  └─ Django / Flask                          │
+│                                             │
+│  💎 ARTIFACTS (Tools)                       │
+│  ├─ Git & GitHub                            │
+│  ├─ Docker & Kubernetes                     │
+│  └─ AWS & Azure                             │
+│                                             │
+└─────────────────────────────────────────────┘
 ```
 
-**My Development Workflow** ⚡
+</div>
+
+<div align="center">
+
+### 💫 SPECIAL MOVES
+
+🎯 **Debug Master** - Can fix bugs in one shot  
+⚡ **Speed Coder** - Types at 100 WPM  
+🧠 **Solution Architect** - Designs scalable systems  
+🤝 **Team Player** - Boost team productivity +50%  
 
 </div>
 
